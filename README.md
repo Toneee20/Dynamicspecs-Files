@@ -1,2 +1,0 @@
-# Dynamicspecs-Files
-Files uploads
