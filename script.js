@@ -41,7 +41,7 @@ function submitForm(){
     + 'Message: '    + msg.value   + '\n\n'
     + 'Sent from Dynamicspecs website booking form.';
 
-  window.open('mailto:kemmachipi@gmail.com?subject='
+  window.open('mailto:kemmachipi@gmail.com,support@dynamicspecsoptom.co.za?subject='
     + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body));
 
   showToast('Booking request sent to Dynamicspecs! We will confirm within 24 hours.');
@@ -121,7 +121,7 @@ function submitContactForm(){
   if(!hasValue){showToast('Please fill in your details before sending.');return;}
   bodyParts += '\nSent from Dynamicspecs Contact Page.';
   var link = document.createElement('a');
-  link.href = 'mailto:kemmachipi@gmail.com?subject=' + encodeURIComponent('New Enquiry - Dynamicspecs Optometrists') + '&body=' + encodeURIComponent(bodyParts);
+  link.href = 'mailto:kemmachipi@gmail.com,support@dynamicspecsoptom.co.za?subject=' + encodeURIComponent('New Enquiry - Dynamicspecs Optometrists') + '&body=' + encodeURIComponent(bodyParts);
   link.target = '_blank';
   document.body.appendChild(link);
   link.click();
